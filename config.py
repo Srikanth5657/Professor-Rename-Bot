@@ -1,4 +1,4 @@
-import re, os
+import re, os, time
 
 id_pattern = re.compile(r'^.\d+$') 
 
@@ -21,3 +21,5 @@ START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/3b7050b8b5d918a
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
 PORT = os.environ.get("PORT", "8080")
+
+BOT_START_TIME = time.time()
