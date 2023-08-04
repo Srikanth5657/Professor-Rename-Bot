@@ -1,7 +1,7 @@
 import os, time, datetime, sys
 import asyncio 
 import logging 
-from config import ADMIN
+from config import ADMIN, BOT_START_TIME
 from helper.database import db
 from pyrogram.types import Message
 from pyrogram import Client, filters
@@ -12,10 +12,10 @@ logger.setLevel(logging.INFO)
  
 @Client.on_message(filters.command(["stats", "status"]) & filters.user(ADMIN))
 async def get_stats(bot :Client, message: Message):
-    total_users = await db.total_users_count()
-    uptime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - bot.uptime))    
-    start_t = time.time()
     st = await message.reply('**Aᴄᴄᴇꜱꜱɪɴɢ Tʜᴇ Dᴇᴛᴀɪʟꜱ.....**')
+    total_users = await db.total_users_count()
+    uptime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - BOT_START_TIME))    
+    start_t = time.time()
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
     await st.edit(text=f"**--Bᴏᴛ Sᴛᴀᴛᴜꜱ--** \n\n**⌚️ Bᴏᴛ Uᴩᴛɪᴍᴇ:** {uptime} \n**🐌 Cᴜʀʀᴇɴᴛ Pɪɴɢ:** `{time_taken_s:.3f} ᴍꜱ` \n**👭 Tᴏᴛᴀʟ Uꜱᴇʀꜱ:** `{total_users}`")
