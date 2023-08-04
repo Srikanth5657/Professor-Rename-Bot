@@ -2,7 +2,6 @@ from asyncio import sleep
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from pyrogram.errors import FloodWait
-import humanize
 from helper.txt import mr
 from helper.database import db
 from config import START_PIC, FLOOD, ADMIN
