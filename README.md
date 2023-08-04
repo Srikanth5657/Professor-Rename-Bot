@@ -1,4 +1,4 @@
-<img src="https://telegra.ph/file/3b7050b8b5d918a00b490.jpg" alt="logo" target="/blank">
+<div align="center"><img src="https://telegra.ph/file/3b7050b8b5d918a00b490.jpg" alt="logo" target="/blank"></div>
 
 <h1 align="center">
  <b><a href="https://t.me/RenameSnowProBot" target="/blank"> @RenameSnowProBot ( Renamer BOT ) </a></>
