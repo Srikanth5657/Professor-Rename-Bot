@@ -15,14 +15,15 @@ async def start(client, message):
         await db.add_user(user.id)
     txt = f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
     button = InlineKeyboardMarkup([[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/CinemasMawa'),
-        InlineKeyboardButton(
-            '🌨️ Support', url='https://t.me/Srikanth_Official_Bot')
-    ], [
-        InlineKeyboardButton('☃️ About', callback_data='about'),
-        InlineKeyboardButton('❗ Help', callback_data='help')
-    ]
-    ])
+                InlineKeyboardButton(
+                    '📢 Updates', url='https://t.me/CinemasMawa'),
+                InlineKeyboardButton(
+                    '🌨️ Support', url='https://t.me/Srikanth_Official_Bot')
+            ], [
+                InlineKeyboardButton('☃️ About', callback_data='about'),
+                InlineKeyboardButton('❗ Help', callback_data='help')
+            ]
+            ])
     if START_PIC:
         await message.reply_photo(START_PIC, caption=txt, reply_markup=button)
     else:
@@ -40,18 +41,18 @@ async def log_file(client, message):
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
     file = getattr(message, message.media.value)
-    filecaption = file.file_caption
+    filename = file.file_name
     filesize = humanize.naturalsize(file.file_size)
     fileid = file.file_id
     try:
-        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filecaption}`\n\n**File Size** :- `{filesize}`"""
+        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
         buttons = [[InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename")],
                    [InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel")]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
         await sleep(FLOOD)
     except FloodWait as e:
         await sleep(e.value)
-        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filecaption}`\n\n**File Size** :- `{filesize}`"""
+        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
         buttons = [[InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename")],
                    [InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel")]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
@@ -69,7 +70,7 @@ async def cb_handler(client, query: CallbackQuery):
                 InlineKeyboardButton(
                     '📢 Updates', url='https://t.me/CinemasMawa'),
                 InlineKeyboardButton(
-                    '🌨️ Support', url='https://t.m.me/Srikanth_Official_Bot')
+                    '🌨️ Support', url='https://t.me/Srikanth_Official_Bot')
             ], [
                 InlineKeyboardButton('☃️ About', callback_data='about'),
                 InlineKeyboardButton('❗ Help', callback_data='help')
