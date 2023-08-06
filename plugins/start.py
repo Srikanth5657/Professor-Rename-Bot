@@ -40,7 +40,7 @@ async def log_file(client, message):
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
     file = getattr(message, message.media.value)
-    filename = file.file_caption
+    filecaption = file.file_caption
     filesize = humanize.naturalsize(file.file_size)
     fileid = file.file_id
     try:
