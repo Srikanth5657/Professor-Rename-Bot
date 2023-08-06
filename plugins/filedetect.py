@@ -12,8 +12,8 @@ async def refunc(client, message):
        file = msg.reply_to_message
        media = getattr(file, file.media.value)
        if not "." in new_name:
-          if "." in media.file_caption:
-              extn = media.file_caption.rsplit('.', 1)[-1]
+          if "." in media.file_name:
+              extn = media.file_name.rsplit('.', 1)[-1]
           else:
               extn = "mkv"
           new_name = new_name + "." + extn
