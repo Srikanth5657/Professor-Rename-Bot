@@ -1,6 +1,6 @@
 class mr(object):
     PROGRESS_BAR = """\n
-╭━━━━❰ Snowball Processing... ❱━➣
+╭━━━━❰ Processing... ❱━➣
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
@@ -10,8 +10,7 @@ class mr(object):
     ABOUT_TXT = """
 ╭───────────⍟
 ├🤖 The Name is : {}
-├👑 CREATOR-TG : <a href=https://t.me/Snowball_Official>SNOWBALL OFFICIAL</a> 
-├👑 Instagram : <a href=https://instagram.com/ritesh6_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D>C-Insta</a> 
+├👑 CREATOR-TG : <a href=https://t.me/SRIKANTH_OFFICIAL_BOT>SRIKANTH NAYAK</a> 
 ├📕 LIBRARY : <a href=https://github.com/pyrogram>Pyrogram</a>
 ├✏️ LANGUAGE : <a href=https://www.python.org>Python 3</a>
 ├💾 DATABASE : <a href=https://cloud.mongodb.com>MongoDB</a>
@@ -36,5 +35,5 @@ Example:- /set_caption 📕 File Name: {filename}
 
 ✏️ <b><u>HOW TO RENAME A FILE</u></b>
 •> send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.
-❗ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://instagram.com/ritesh6_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D>Direct Message</a>
+❗ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/SRIKANTH_OFFICIAL_BOT>Direct Message</a>
 """
