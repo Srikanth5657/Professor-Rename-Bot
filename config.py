@@ -7,7 +7,7 @@ class Config(object):
     API_ID    = os.environ.get("API_ID", "")
     API_HASH  = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "RenameSnowProBot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Professor_Rename_Bot")
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","")     
