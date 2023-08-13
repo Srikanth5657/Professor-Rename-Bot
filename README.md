@@ -1,29 +1,11 @@
-<div align="center"><img src="https://telegra.ph/file/3b7050b8b5d918a00b490.jpg" alt="logo" target="/blank"></div>
+<div align="center"><img src="https://telegra.ph/file/f8f490b712641ab93304e.jpg" alt="logo" target="/blank"></div>
 
 <h1 align="center">
- <b><a href="https://t.me/RenameSnowProBot" target="/blank"> @RenameSnowProBot ( Renamer BOT ) </a></>
+ <b><a href="https://t.me/Professor_Rename_Bot" target="/blank"> @Professor_Rename_Bot ( Renamer BOT ) </a></>
 </h1>
 
 <p align="center">🤍 Thanks for Being Here 🤍</p>
 
-
-
-## Deploy To Koyeb
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/ritesh-0/Rename-Snow-Pro-Bot&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[WEBHOOK]=True&env[ADMIN]&env[DB_URL]&env[DB_NAME]=RenameSnowProBot&env[FORCE_SUB]&env[START_PIC]&env[LOG_CHANNEL]=You%20Dont%20Need%20LogChannel%20To%20Remove%20This%20Variable&run_command=python%20bot.py&branch=main&name=RenameSnowProBot) 
-
-## Deploy To Render
-                  
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ritesh-0/Rename-Snow-Pro-Bot)
-
-## Deploy To Railway
-
-<a href="https://graph.org/file/fabd75cd5043d2cfdc13d.jpg"><img src="https://railway.app/button.svg" alt="Deploy"></a>
-
-## Deploy To Heroku
-
-<a href="https://heroku.com/deploy?template=https://github.com/ritesh-0/Rename-Snow-Pro-Bot"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a>
 
 
 ### ⚡️ Configs 
