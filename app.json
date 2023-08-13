@@ -1,9 +1,9 @@
 {
-    "name": "SnowBallDeveloper Renamer Bot",
+    "name": "Snow Renamer Bot",
     "description": "Telegram File Renamer Bot ",
     "logo": "https://telegra.ph/file/3b7050b8b5d918a00b490.jpg",
-    "keywords": ["SnowBallDeveloper Renamer Bot", "Mongo DB"],    
-    "repository": "https://github.com/ritesh-0/Rename-Snow-Pro-Bot",
+    "keywords": ["Renamer Bot", "Mongo DB"],    
+    "repository": "https://github.com/ritesh-0/RenameSnowProBot",
     "env": {
         "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
@@ -12,6 +12,10 @@
         "API_HASH": {
             "description": "Your API Hash From my.telegram.org ",
             "value": ""
+        },
+        "WEBHOOK": {
+            "description": "if your server is need web service! value = True else value = False",
+            "value": "False"
         },
         "FORCE_SUB": {
             "description": "Your force sub channel user name without [@] ",
@@ -23,8 +27,11 @@
             "value": ""
         },
         "ADMIN": {
-            "description":"Add Your User ID multiple is use space to split",
-            "value": ""
+            "description":"Add Your User ID multiple is use space to split"
+        },
+        "LOG_CHANNEL": {
+            "description":"Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must",
+            "required": false           
         },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
@@ -32,11 +39,11 @@
         },
         "DB_NAME":{ 
             "description":"Your Mongo DB Database Name ",
-            "value": "RenameSnowProBot",
+            "value": "SnowPro_Users",
             "required": false
         },
         "START_PIC": {
-            "description": "Your Bot start cmd Pic from @HK_telegraph_BOT",
+            "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
             "value": "",
             "required": false
         }
